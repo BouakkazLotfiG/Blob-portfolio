@@ -1,14 +1,19 @@
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 import Hero from "./components/Hero/Hero";
 import Portfolio from "./components/Portfolio/Portfolio";
+import Records from "./components/Records/Records";
 import Services from "./components/Services/Services";
-import Dav from "./components/Portfolio/Dav";
 
 function App() {
   return (
     <div>
       <Hero />
       <Services />
-      <Dav />
+      <Portfolio />
+      <About />
+      <Records />
+      <Contact />
     </div>
   );
 }
