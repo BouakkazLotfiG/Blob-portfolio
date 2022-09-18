@@ -45,11 +45,11 @@ const Hero = () => {
 
             <div class="column-2 image">
               <img
-                src="./img/shapes/points2.png"
+                src={images.points2}
                 class="points points2"
                 alt=""
               />
-              <img src="./img/person.png" class="img-element z-index" alt="" />
+              <img src={images.person} class="img-element z-index" alt="" />
             </div>
           </div>
         </div>
