@@ -38,14 +38,9 @@ const Portfolio = () => {
           <div class="section-body">
             <div class="filter">
               <button class="filter-btn active" data-filter="*">All</button>
-              <button class="filter-btn" data-filter=".ui">UI/UX</button>
-              <button class="filter-btn" data-filter=".webdev">Web Dev</button>
-              <button class="filter-btn" data-filter=".appdev">
-                Mobile App
-              </button>
-              <button class="filter-btn" data-filter=".logo-design">
-                Logo Design
-              </button>
+              <button class="filter-btn" data-filter=".ui">Full Stack Web</button>
+              <button class="filter-btn" data-filter=".webdev">Frontend</button>
+              
             </div>
 
         <div className="grid">          
