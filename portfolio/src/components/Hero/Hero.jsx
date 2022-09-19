@@ -7,49 +7,49 @@ import { images } from '../../constants'
 const Hero = () => {
   return (
       <header id="header">
-          <div class="overlay overlay-lg">
-          <img src={images.square} class="shape square" alt="" />
-          <img src={images.circle} class="shape circle" alt="" />
+          <div className="overlay overlay-lg">
+          <img src={images.square} className="shape square" alt="" />
+          <img src={images.circle} className="shape circle" alt="" />
           <img
             src={images.halfcircle}
-            class="shape half-circle1"
+            className="shape half-circle1"
             alt=""
           />
           <img
             src={images.halfcircle}
-            class="shape half-circle2"
+            className="shape half-circle2"
             alt=""
           />
-          <img src={images.x} class="shape xshape" alt="" />
-          <img src={images.wave} class="shape wave wave1" alt="" />
-          <img src={images.wave} class="shape wave wave2" alt="" />
-          <img src={images.triangle} class="shape triangle" alt="" />
-          <img src={images.letters} class="letters" alt="" />
-          <img src={images.points1} class="points points1" alt="" />
+          <img src={images.x} className="shape xshape" alt="" />
+          <img src={images.wave} className="shape wave wave1" alt="" />
+          <img src={images.wave} className="shape wave wave2" alt="" />
+          <img src={images.triangle} className="shape triangle" alt="" />
+          <img src={images.letters} className="letters" alt="" />
+          <img src={images.points1} className="points points1" alt="" />
         </div>
 
           
           <Navbar />
           
-          <div class="header-content">
-          <div class="container grid-2">
-            <div class="column-1">
-              <h1 class="header-title">John Dorsey</h1>
-              <p class="text">
+          <div className="header-content">
+          <div className="container grid-2">
+            <div className="column-1">
+              <h1 className="header-title">Lotfi Bouakkaz</h1>
+              <p className="text">
                 Hello, I'm Miley Brewer, web design and developer. Lorem ipsum
                 dolor sit amet consectetur adipisicing elit. Totam magni sit
                 hic!
               </p>
-              <a href="#" class="btn">Download CV</a>
+              <a href="#" className="btn">Download CV</a>
             </div>
 
-            <div class="column-2 image">
+            <div className="column-2 image">
               <img
                 src={images.points2}
-                class="points points2"
+                className="points points2"
                 alt=""
               />
-              <img src={images.person} class="img-element z-index" alt="" />
+              <img src={images.person} className="img-element z-index" alt="" />
             </div>
           </div>
         </div>

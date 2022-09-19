@@ -40,34 +40,34 @@ const Dev = () => {
     console.log(filterWork)
     
   return (
-     <section class="portfolio section" id="portfolio">
-        <div class="background-bg">
-          <div class="overlay overlay-sm">
+     <section className="portfolio section" id="portfolio">
+        <div className="background-bg">
+          <div className="overlay overlay-sm">
             <img
               src={images.halfcircle}
-              class="shape half-circle1"
+              className="shape half-circle1"
               alt=""
             />
             <img
               src={images.halfcircle}
-              class="shape half-circle2"
+              className="shape half-circle2"
               alt=""
             />
-            <img src={images.square} class="shape square" alt="" />
-            <img src={images.wave} class="shape wave" alt="" />
-            <img src={images.circle} class="shape circle" alt="" />
+            <img src={images.square} className="shape square" alt="" />
+            <img src={images.wave} className="shape wave" alt="" />
+            <img src={images.circle} className="shape circle" alt="" />
             <img
               src={images.triangle}
-              class="shape triangle"
+              className="shape triangle"
               alt=""
             />
-            <img src={images.x} class="shape xshape" alt="" />
+            <img src={images.x} className="shape xshape" alt="" />
           </div>
         </div>
 
-        <div class="container">
-          <div class="section-header">
-            <h3 class="title" data-title="My works">Portfolio</h3>
+        <div className="container">
+          <div className="section-header">
+            <h3 className="title" data-title="My works">Portfolio</h3>
           </div>
 
           

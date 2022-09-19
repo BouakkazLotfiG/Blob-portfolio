@@ -3,19 +3,19 @@ import "./Footer.css"
 
 const Footer = () => {
   return (
-    <footer class="footer">
-      <div class="container">
-        <div class="grid-4">
-          <div class="grid-4-col footer-about">
-            <h3 class="title-sm">About</h3>
-            <p class="text">
+    <footer className="footer">
+      <div className="container">
+        <div className="grid-4">
+          <div className="grid-4-col footer-about">
+            <h3 className="title-sm">About</h3>
+            <p className="text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
               officiis quo officia quia?
             </p>
           </div>
 
-          <div class="grid-4-col footer-links">
-            <h3 class="title-sm">Links</h3>
+          <div className="grid-4-col footer-links">
+            <h3 className="title-sm">Links</h3>
             <ul>
               <li>
                 <a href="#services">Services</a>
@@ -35,8 +35,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div class="grid-4-col footer-links">
-            <h3 class="title-sm">Services</h3>
+          <div className="grid-4-col footer-links">
+            <h3 className="title-sm">Services</h3>
             <ul>
               <li>
                 <a href="#">Web Design</a>
@@ -56,51 +56,51 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div class="grid-4-col footer-newstletter">
-            <h3 class="title-sm">Subscribe</h3>
-            <p class="text">
+          <div className="grid-4-col footer-newstletter">
+            <h3 className="title-sm">Subscribe</h3>
+            <p className="text">
               Lorem ipsum dolor, sit amet ipsum dolor sit amet.
             </p>
-            <div class="footer-input-wrap">
-              <input type="email" class="footer-input" placeholder="Email" />
-              <a href="#" class="input-arrow">
-                <i class="fas fa-angle-right"></i>
+            <div className="footer-input-wrap">
+              <input type="email" className="footer-input" placeholder="Email" />
+              <a href="#" className="input-arrow">
+                <i className="fas fa-angle-right"></i>
               </a>
             </div>
           </div>
         </div>
 
-        <div class="bottom-footer">
-          <div class="copyright">
-            <p class="text">
+        <div className="bottom-footer">
+          <div className="copyright">
+            <p className="text">
               Copyright&copy;2020 All rights reserved | Made by
               <span>True Coder</span>
             </p>
           </div>
 
-          <div class="followme-wrap">
-            <div class="followme">
+          <div className="followme-wrap">
+            <div className="followme">
               <h3>Follow me</h3>
-              <span class="footer-line"></span>
-              <div class="social-media">
+              <span className="footer-line"></span>
+              <div className="social-media">
                 <a href="#">
-                  <i class="fab fa-facebook-f"></i>
+                  <i className="fab fa-facebook-f"></i>
                 </a>
                 <a href="#">
-                  <i class="fab fa-twitter"></i>
+                  <i className="fab fa-twitter"></i>
                 </a>
                 <a href="#">
-                  <i class="fab fa-instagram"></i>
+                  <i className="fab fa-instagram"></i>
                 </a>
                 <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
+                  <i className="fab fa-linkedin-in"></i>
                 </a>
               </div>
             </div>
 
-            <div class="back-btn-wrap">
-              <a href="#" class="back-btn">
-                <i class="fas fa-chevron-up"></i>
+            <div className="back-btn-wrap">
+              <a href="#" className="back-btn">
+                <i className="fas fa-chevron-up"></i>
               </a>
             </div>
           </div>

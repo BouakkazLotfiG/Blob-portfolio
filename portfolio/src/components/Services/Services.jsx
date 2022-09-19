@@ -4,65 +4,65 @@ import { images } from '../../constants'
 
 const Services = () => {
   return (
-      <section class="services section" id="services">
-        <div class="container">
-          <div class="section-header">
-            <h3 class="title" data-title="What I Do">Services</h3>
-            <p class="text">
+      <section className="services section" id="services">
+        <div className="container">
+          <div className="section-header">
+            <h3 className="title" data-title="What I Do">Services</h3>
+            <p className="text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
               vero?
             </p>
           </div>
 
-          <div class="cards">
-            <div class="card-wrap">
+          <div className="cards">
+            <div className="card-wrap">
               <img
                 src={images.points3}
-                class="points points1 points-sq"
+                className="points points1 points-sq"
                 alt=""
               />
-              <div class="card" data-card="UI/UX">
-                <div class="card-content z-index">
-                  <img src={images.designicon} class="icon" alt="" />
-                  <h3 class="title-sm">Web Design</h3>
-                  <p class="text">
+              <div className="card" data-card="UI/UX">
+                <div className="card-content z-index">
+                  <img src={images.designicon} className="icon" alt="" />
+                  <h3 className="title-sm">Web Design</h3>
+                  <p className="text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
                     est suscipit itaque?
                   </p>
-                  <a href="#" class="btn small">Read more</a>
+                  <a href="#" className="btn small">Read more</a>
                 </div>
               </div>
             </div>
 
-            <div class="card-wrap">
-              <div class="card" data-card="Code">
-                <div class="card-content z-index">
-                  <img src={images.codeicon} class="icon" alt="" />
-                  <h3 class="title-sm">Web Development</h3>
-                  <p class="text">
+            <div className="card-wrap">
+              <div className="card" data-card="Code">
+                <div className="card-content z-index">
+                  <img src={images.codeicon} className="icon" alt="" />
+                  <h3 className="title-sm">Web Development</h3>
+                  <p className="text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dolores suscipit nobis dolore?
                   </p>
-                  <a href="#" class="btn small">Read more</a>
+                  <a href="#" className="btn small">Read more</a>
                 </div>
               </div>
             </div>
 
-            <div class="card-wrap">
+            <div className="card-wrap">
               <img
                 src={images.points3}
-                class="points points2 points-sq"
+                className="points points2 points-sq"
                 alt=""
               />
-              <div class="card" data-card="App">
-                <div class="card-content z-index">
-                  <img src={images.appicon} class="icon" alt="" />
-                  <h3 class="title-sm">App Development</h3>
-                  <p class="text">
+              <div className="card" data-card="App">
+                <div className="card-content z-index">
+                  <img src={images.appicon} className="icon" alt="" />
+                  <h3 className="title-sm">App Development</h3>
+                  <p className="text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Voluptatum hic veniam nihil.
                   </p>
-                  <a href="#" class="btn small">Read more</a>
+                  <a href="#" className="btn small">Read more</a>
                 </div>
               </div>
             </div>

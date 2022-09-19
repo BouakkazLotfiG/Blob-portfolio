@@ -5,12 +5,12 @@ import { images } from '../../constants'
 const Navbar = () => {
   return (
     <nav>
-          <div class="container">
-            <div class="logo">
+          <div className="container">
+            <div className="logo">
               <img src={images.logo} />
             </div>
 
-            <div class="links">
+            <div className="links">
               <ul>
                 <li>
                   <a href="#header">Home</a>
@@ -31,13 +31,13 @@ const Navbar = () => {
                   <a href="#contact">Contact</a>
                 </li>
                 <li>
-                  <a href="#hireme" class="active">Hire me</a>
+                  <a href="#hireme" className="active">Hire me</a>
                 </li>
               </ul>
             </div>
 
-            <div class="hamburger-menu">
-              <div class="bar"></div>
+            <div className="hamburger-menu">
+              <div className="bar"></div>
             </div>
           </div>
         </nav>

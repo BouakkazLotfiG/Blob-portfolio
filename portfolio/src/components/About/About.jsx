@@ -4,47 +4,47 @@ import { images } from '../../constants'
 
 const About = () => {
   return (
-    <section class="about section" id="about">
-        <div class="container">
-          <div class="section-header">
-            <h3 class="title" data-title="Who Am I">About me</h3>
+    <section className="about section" id="about">
+        <div className="container">
+          <div className="section-header">
+            <h3 className="title" data-title="Who Am I">About me</h3>
           </div>
 
-          <div class="section-body grid-2">
-            <div class="column-1">
-              <h3 class="title-sm">Hello, I'm</h3>
-              <p class="text">
+          <div className="section-body grid-2">
+            <div className="column-1">
+              <h3 className="title-sm">Hello, I'm</h3>
+              <p className="text">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Praesentium distinctio doloribus quam? Ut, laudantium a dolore,
                 minima repudiandae iure iste molestiae exercitationem earum
                 neque tempora?
               </p>
-              <div class="skills">
-                <div class="skill html">
-                  <h3 class="skill-title">HTML</h3>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-progress="90%"></div>
+              <div className="skills">
+                <div className="skill html">
+                  <h3 className="skill-title">HTML</h3>
+                  <div className="skill-bar">
+                    <div className="skill-progress" data-progress="90%"></div>
                   </div>
                 </div>
-                <div class="skill css">
-                  <h3 class="skill-title">CSS</h3>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-progress="70%"></div>
+                <div className="skill css">
+                  <h3 className="skill-title">CSS</h3>
+                  <div className="skill-bar">
+                    <div className="skill-progress" data-progress="70%"></div>
                   </div>
                 </div>
-                <div class="skill js">
-                  <h3 class="skill-title">JavaScript</h3>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-progress="80%"></div>
+                <div className="skill js">
+                  <h3 className="skill-title">JavaScript</h3>
+                  <div className="skill-bar">
+                    <div className="skill-progress" data-progress="80%"></div>
                   </div>
                 </div>
               </div>
-              <a href="#" class="btn">Read more</a>
+              <a href="#" className="btn">Read more</a>
             </div>
 
-            <div class="column-2 image">
-              <img src={images.points4} class="points" alt="" />
-              <img src={images.about} class="z-index" alt="" />
+            <div className="column-2 image">
+              <img src={images.points4} className="points" alt="" />
+              <img src={images.about} className="z-index" alt="" />
             </div>
           </div>
         </div>

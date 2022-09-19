@@ -5,26 +5,26 @@ import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 const Records = () => {
   return (
-    <section class="records">
-        <div class="overlay overlay-sm">
-          <img src={images.square} alt="" class="shape square1" />
-          <img src={images.square} alt="" class="shape square2" />
-          <img src={images.circle} alt="" class="shape circle" />
+    <section className="records">
+        <div className="overlay overlay-sm">
+          <img src={images.square} alt="" className="shape square1" />
+          <img src={images.square} alt="" className="shape square2" />
+          <img src={images.circle} alt="" className="shape circle" />
           <img
             src={images.halfcircle}
             alt=""
-            class="shape half-circle"
+            className="shape half-circle"
           />
-          <img src={images.wave} alt="" class="shape wave wave1" />
-          <img src={images.wave} alt="" class="shape wave wave2" />
-          <img src={images.x} alt="" class="shape xshape" />
-          <img src={images.triangle} alt="" class="shape triangle" />
+          <img src={images.wave} alt="" className="shape wave wave1" />
+          <img src={images.wave} alt="" className="shape wave wave2" />
+          <img src={images.x} alt="" className="shape xshape" />
+          <img src={images.triangle} alt="" className="shape triangle" />
         </div>
 
-        <div class="container">
-          <div class="wrap">
-            <div class="record-circle">
-            <h2 class="number" >
+        <div className="container">
+          <div className="wrap">
+            <div className="record-circle">
+            <h2 className="number" >
               <CountUp end={100} redraw={true}>
                 {({ countUpRef, start }) => (
                     <VisibilitySensor onChange={start} delayedCall>
@@ -33,13 +33,13 @@ const Records = () => {
                 )}
              </CountUp>
               </h2>
-              <h4 class="sub-title">Projects</h4>
+              <h4 className="sub-title">Projects</h4>
             </div>
           </div>
 
-          <div class="wrap">
-            <div class="record-circle active">
-            <h2 class="number" data-num="174">
+          <div className="wrap">
+            <div className="record-circle active">
+            <h2 className="number" data-num="174">
               <CountUp end={100} redraw={true}>
                 {({ countUpRef, start }) => (
                     <VisibilitySensor onChange={start} delayedCall>
@@ -48,13 +48,13 @@ const Records = () => {
                 )}
              </CountUp>
               </h2>
-              <h4 class="sub-title">Happy Clients</h4>
+              <h4 className="sub-title">Happy Clients</h4>
             </div>
           </div>
 
-          <div class="wrap">
-            <div class="record-circle">
-            <h2 class="number" data-num="892">
+          <div className="wrap">
+            <div className="record-circle">
+            <h2 className="number" data-num="892">
               <CountUp end={100} redraw={true}>
                 {({ countUpRef, start }) => (
                     <VisibilitySensor onChange={start} delayedCall>
@@ -63,7 +63,7 @@ const Records = () => {
                 )}
              </CountUp>
               </h2>
-              <h4 class="sub-title">Work Hour</h4>
+              <h4 className="sub-title">Work Hour</h4>
             </div>
           </div>
 
