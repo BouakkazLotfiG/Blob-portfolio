@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Footer.css"
+import {FaFacebook, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
+import {AiOutlineArrowUp} from 'react-icons/ai'
 
 const Footer = () => {
   return (
@@ -64,7 +66,7 @@ const Footer = () => {
             <div className="footer-input-wrap">
               <input type="email" className="footer-input" placeholder="Email" />
               <a href="#" className="input-arrow">
-                <i className="fas fa-angle-right"></i>
+                <AiOutlineArrowUp />
               </a>
             </div>
           </div>
@@ -73,8 +75,7 @@ const Footer = () => {
         <div className="bottom-footer">
           <div className="copyright">
             <p className="text">
-              Copyright&copy;2020 All rights reserved | Made by
-              <span>True Coder</span>
+             Made by <span>Lotfi</span>
             </p>
           </div>
 
@@ -84,23 +85,20 @@ const Footer = () => {
               <span className="footer-line"></span>
               <div className="social-media">
                 <a href="#">
-                  <i className="fab fa-facebook-f"></i>
+                  <FaInstagram />
                 </a>
                 <a href="#">
-                  <i className="fab fa-twitter"></i>
+                  <FaGithub />
                 </a>
                 <a href="#">
-                  <i className="fab fa-instagram"></i>
-                </a>
-                <a href="#">
-                  <i className="fab fa-linkedin-in"></i>
+                  <FaLinkedin />
                 </a>
               </div>
             </div>
 
             <div className="back-btn-wrap">
               <a href="#" className="back-btn">
-                <i className="fas fa-chevron-up"></i>
+                <AiOutlineArrowUp />
               </a>
             </div>
           </div>
