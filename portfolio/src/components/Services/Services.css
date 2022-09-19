@@ -421,7 +421,9 @@ header .circle {
 
 .cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+
   flex-wrap: wrap;
   width: 100%;
 }
@@ -442,6 +444,7 @@ header .circle {
   justify-content: center;
   text-align: center;
   padding: 3rem 2rem;
+  
   overflow: hidden;
   transition: 0.3s;
 }

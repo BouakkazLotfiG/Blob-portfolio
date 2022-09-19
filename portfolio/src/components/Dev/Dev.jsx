@@ -6,6 +6,7 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import { motion } from 'framer-motion';
 import { images } from '../../constants'
+import {AiFillEye, AiFillCode } from "react-icons/ai"
 
 
 const Dev = () => {
@@ -107,7 +108,7 @@ const Dev = () => {
                                         transition={{ duration: 0.25 }}
                                         className="app__flex"
                                     >
-                                    
+                                      <AiFillEye />
                                     </motion.div>
                                 </a>
                                 <a href={work.codeLink} target="_blank" rel="noreferrer">
@@ -117,12 +118,24 @@ const Dev = () => {
                                         transition={{ duration: 0.25 }}
                                         className="app__flex"
                                     >
-                                      
+                                      <AiFillCode />
                                     </motion.div>
                                 </a>
                             </motion.div>
                         </div>
+
+
+                        <div className="app__work-content app__flex">
+                          <h4 className="bold-text">{work.name}</h4>
+                          <p className="p-text" style={{ marginTop: 10 }}>{work.desc}</p>
+
+                          
+                            <p className="p-text">{work.tech}</p>
+                          
+                        </div>
                     </div>
+
+                    
                 ))} 
             </motion.div>
                       

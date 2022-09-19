@@ -1,6 +1,7 @@
 import React from 'react'
 import "./About.css"
 import { images } from '../../constants'
+import ProgressBar from 'react-bootstrap/ProgressBar';
 
 const About = () => {
   return (
@@ -19,12 +20,19 @@ const About = () => {
                 minima repudiandae iure iste molestiae exercitationem earum
                 neque tempora?
               </p>
+
+              <div>
+
+              </div>
+
               <div className="skills">
                 <div className="skill html">
                   <h3 className="skill-title">HTML</h3>
+                  
                   <div className="skill-bar">
-                    <div className="skill-progress" data-progress="90%"></div>
+                    <div className="skill-progress" data-progress="70%"></div>
                   </div>
+                 
                 </div>
                 <div className="skill css">
                   <h3 className="skill-title">CSS</h3>

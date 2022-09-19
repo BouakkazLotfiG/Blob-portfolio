@@ -34,11 +34,12 @@ const Hero = () => {
           <div className="header-content">
           <div className="container grid-2">
             <div className="column-1">
+            <p className="text">
+                Hello, I'm
+              </p>
               <h1 className="header-title">Lotfi Bouakkaz</h1>
               <p className="text">
-                Hello, I'm Miley Brewer, web design and developer. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Totam magni sit
-                hic!
+                and i'm a Web application developer. 
               </p>
               <a href="#" className="btn">Download CV</a>
             </div>

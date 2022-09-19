@@ -9,13 +9,12 @@ const Services = () => {
           <div className="section-header">
             <h3 className="title" data-title="What I Do">Services</h3>
             <p className="text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
-              vero?
+              Here are the services and technologies i use
             </p>
           </div>
 
           <div className="cards">
-            <div className="card-wrap">
+            {/* <div className="card-wrap">
               <img
                 src={images.points3}
                 className="points points1 points-sq"
@@ -32,18 +31,18 @@ const Services = () => {
                   <a href="#" className="btn small">Read more</a>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="card-wrap">
               <div className="card" data-card="Code">
                 <div className="card-content z-index">
                   <img src={images.codeicon} className="icon" alt="" />
-                  <h3 className="title-sm">Web Development</h3>
+                  <h3 className="title-sm">Front end Development</h3>
                   <p className="text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dolores suscipit nobis dolore?
                   </p>
-                  <a href="#" className="btn small">Read more</a>
+                  <a href="#portfolio" className="btn small">View Projects</a>
                 </div>
               </div>
             </div>
@@ -56,13 +55,13 @@ const Services = () => {
               />
               <div className="card" data-card="App">
                 <div className="card-content z-index">
-                  <img src={images.appicon} className="icon" alt="" />
-                  <h3 className="title-sm">App Development</h3>
+                  <img src={images.designicon} className="icon" alt="" />
+                  <h3 className="title-sm">Full stack Development</h3>
                   <p className="text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Voluptatum hic veniam nihil.
                   </p>
-                  <a href="#" className="btn small">Read more</a>
+                  <a href="#portfolio" className="btn small">View Projects</a>
                 </div>
               </div>
             </div>

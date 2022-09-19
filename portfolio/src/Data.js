@@ -6,6 +6,8 @@ const projects = [
     projectLink: "google.com",
     codeLink: "github.com",
     imgUrl: "https://i.scdn.co/image/ab6761610000e5eb97bf44ee61c29d8a656c0901",
+    desc: "this proket is goooooooood",
+    tech: "React, Mongodb, GraphQl"
   },
   {
     id: "2",
@@ -14,6 +16,8 @@ const projects = [
     projectLink: "google.com",
     codeLink: "github.com",
     imgUrl: "https://i.scdn.co/image/ab6761610000e5eb97bf44ee61c29d8a656c0901",
+    desc: "this proket is goooooooood",
+    tech: "React, Mongodb, GraphQl"
   },
   {
     id: "3",
@@ -22,6 +26,8 @@ const projects = [
     projectLink: "google.com",
     codeLink: "github.com",
     imgUrl: "https://i.scdn.co/image/ab6761610000e5eb97bf44ee61c29d8a656c0901",
+    desc: "this proket is goooooooood",
+    tech: "React, Mongodb, GraphQl"
   },
   {
     id: "4",
@@ -30,6 +36,8 @@ const projects = [
     projectLink: "google.com",
     codeLink: "github.com",
     imgUrl: "https://i.scdn.co/image/ab6761610000e5eb97bf44ee61c29d8a656c0901",
+    desc: "this proket is goooooooood",
+    tech: "React, Mongodb, GraphQl"
   },
   {
     id: "5",
@@ -38,6 +46,8 @@ const projects = [
     projectLink: "google.com",
     codeLink: "github.com",
     imgUrl: "https://i.scdn.co/image/ab6761610000e5eb97bf44ee61c29d8a656c0901",
+    desc: "this proket is goooooooood",
+    tech: "React, Mongodb, GraphQl"
   },
   {
     id: "6",
@@ -46,6 +56,8 @@ const projects = [
     projectLink: "google.com",
     codeLink: "github.com",
     imgUrl: "https://i.scdn.co/image/ab6761610000e5eb97bf44ee61c29d8a656c0901",
+    desc: "this proket is goooooooood",
+    tech: "React, Mongodb, GraphQl"
   },
   {
     id: "7",
@@ -54,6 +66,8 @@ const projects = [
     projectLink: "google.com",
     codeLink: "github.com",
     imgUrl: "https://i.scdn.co/image/ab6761610000e5eb97bf44ee61c29d8a656c0901",
+    desc: "this proket is goooooooood",
+    tech: "React, Mongodb, GraphQl"
   },
 ];
 
