@@ -1,12 +1,14 @@
+
+
 const projects = [
   {
     id: "1",
-    tag: "Full stack",
-    name: "Project managment",
-    projectLink: "google.com",
-    codeLink: "github.com",
-    imgUrl: "https://i.scdn.co/image/ab6761610000e5eb97bf44ee61c29d8a656c0901",
-    desc: "this proket is goooooooood",
+    tag: "Frontend",
+    name: "CryptoBase",
+    projectLink: "https://bl-crypto.netlify.app/",
+    codeLink: "https://github.com/BouakkazLotfiG/crypto-app",
+    imgUrl: "./assets/portfolio/cryptoBase.PNG",
+    desc: "A cryptocurrency web application displaying updated informations about the top 10 crypto in the world",
     tech: "React, Mongodb, GraphQl"
   },
   {

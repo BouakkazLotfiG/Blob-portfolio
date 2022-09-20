@@ -6,18 +6,52 @@ import Hero from "./components/Hero/Hero";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Records from "./components/Records/Records";
 import Services from "./components/Services/Services";
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+import {motion} from 'framer-motion'
+
+import {useState, useEffect} from 'react'
 
 function App() {
+
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000)
+  }, [])
+  
+
   return (
     <div>
-      <Hero />
-      <Services />
-      {/* <Portfolio /> */}
-      <Dev />
-      <About />
-      <Records />
-      <Contact />
-      <Footer />
+      {
+        loading ?
+        <div className="app"> 
+        <ClimbingBoxLoader 
+        color="#FFF" 
+        loading={loading} 
+        size={30} />
+        </div>
+        :
+        <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.9 }}
+>
+             
+              
+          <Hero />
+          <Services />
+          {/* <Portfolio /> */}
+          <Dev />
+          <About />
+          <Records />
+          <Contact />
+          <Footer />
+          </motion.div>
+      }
+      
     </div>
   );
 }

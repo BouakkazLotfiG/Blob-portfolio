@@ -2,19 +2,29 @@ import React from 'react'
 import "./Hero.css"
 import Navbar from "../Navbar/Navbar";
 import { images } from '../../constants'
+import {motion } from 'framer-motion'
+
 
 
 const Hero = () => {
+
+  
+
   return (
       <header id="header">
+          
+          
           <div className="overlay overlay-lg">
           <img src={images.square} className="shape square" alt="" />
           <img src={images.circle} className="shape circle" alt="" />
-          <img
+
+            <img
             src={images.halfcircle}
             className="shape half-circle1"
             alt=""
           />
+          
+          
           <img
             src={images.halfcircle}
             className="shape half-circle2"
@@ -26,7 +36,9 @@ const Hero = () => {
           <img src={images.triangle} className="shape triangle" alt="" />
           <img src={images.letters} className="letters" alt="" />
           <img src={images.points1} className="points points1" alt="" />
-        </div>
+             </div>
+          
+     
 
           
           <Navbar />
@@ -41,8 +53,11 @@ const Hero = () => {
               <p className="text">
                 and i'm a Web application developer. 
               </p>
-              <a href="#" className="btn">Download CV</a>
+              
+                <a href="#" className="btn">Download CV</a> 
+              
             </div>
+           
 
             <div className="column-2 image">
               <img
@@ -50,7 +65,12 @@ const Hero = () => {
                 className="points points2"
                 alt=""
               />
+              <motion.div
+              animate={{ x: 100 }}
+              transition={{ ease: "easeOut", duration: 2 }}
+>
               <img src={images.person} className="img-element z-index" alt="" />
+              </motion.div>
             </div>
           </div>
         </div>
