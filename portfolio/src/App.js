@@ -29,9 +29,9 @@ function App() {
         loading ?
         <div className="app"> 
         <ClimbingBoxLoader 
-        color="#FFF" 
+        color="#784cfb" 
         loading={loading} 
-        size={30} />
+        size={15} />
         </div>
         :
         <motion.div

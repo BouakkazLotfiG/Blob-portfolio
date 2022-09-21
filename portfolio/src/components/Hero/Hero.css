@@ -336,6 +336,16 @@ nav.open .links {
     line-height: 0.8;
     color: var(--dark-one);
 }
+.followme-wrap {
+    display: flex;
+    margin-top: 30px;
+}
+
+.followme {
+    display: flex;
+    align-items: center;
+    
+}
 
 .header-content .text {
     margin: 2.15rem 0;
@@ -804,6 +814,7 @@ header .circle {
 
     .social-media a {
         font-size: 1.05rem;
+        margin-right: 20px;
     }
 
     .back-btn-wrap {
