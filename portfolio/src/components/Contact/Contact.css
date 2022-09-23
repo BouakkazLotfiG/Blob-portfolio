@@ -195,7 +195,7 @@ img {
 }
 
 .btn:hover {
-    background-color: #6b44e0;
+    background-color: #540021;
 }
 
 .btn.small {
@@ -206,7 +206,8 @@ img {
 /* End Genral Styles */
 
 
-* Contact */ .contact {
+/* Contact */
+.contact {
     position: relative;
     width: 100%;
     padding: 13.5rem 0 8.5rem;
@@ -273,12 +274,21 @@ img {
     min-width: 67px;
     height: 67px;
     display: inline-block;
-    border-radius: 50%;
+    border-radius: 20%;
     background-color: var(--main-color);
     color: var(--light-one);
     text-align: center;
     font-size: 1.4rem;
     margin-right: 1rem;
+    align-items: center;
+    }
+    
+    .contact-icon svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        margin-top: 20px;
 }
 
 .contact-icon i {

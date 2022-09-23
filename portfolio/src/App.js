@@ -25,22 +25,16 @@ function App() {
 
   return (
     <div>
-      {
-        loading ?
-        <div className="app"> 
-        <ClimbingBoxLoader 
-        color="#784cfb" 
-        loading={loading} 
-        size={15} />
+      {loading ? (
+        <div className="app">
+          <ClimbingBoxLoader color="#FF0066" loading={loading} size={15} />
         </div>
-        :
+      ) : (
         <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.9 }}
->
-             
-              
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.9 }}
+        >
           <Hero />
           <Services />
           {/* <Portfolio /> */}
@@ -49,9 +43,8 @@ function App() {
           <Records />
           <Contact />
           <Footer />
-          </motion.div>
-      }
-      
+        </motion.div>
+      )}
     </div>
   );
 }

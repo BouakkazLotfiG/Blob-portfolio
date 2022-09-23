@@ -1,5 +1,8 @@
 import React from 'react'
 import "./Contact.css"
+import {FaLocationArrow} from 'react-icons/fa'
+import {MdEmail} from 'react-icons/md'
+import {AiFillPhone} from 'react-icons/ai'
 
 const Contact = () => {
   return (
@@ -15,21 +18,22 @@ const Contact = () => {
               <div className="information-wrap">
                 <div className="information">
                   <div className="contact-icon">
-                    <i className="fas fa-map-marker-alt"></i>
+                    <FaLocationArrow />
                   </div>
                   <p className="info-text">92 Cherry Drive Unimodale, NY 11553</p>
                 </div>
 
                 <div className="information">
                   <div className="contact-icon">
-                    <i className="fas fa-paper-plane"></i>
+                    <MdEmail />
                   </div>
                   <p className="info-text">lorem@ipsum.com</p>
                 </div>
 
                 <div className="information">
                   <div className="contact-icon">
-                    <i className="fas fa-phone-alt"></i>
+                  <AiFillPhone />
+                    
                   </div>
                   <p className="info-text">123-456-789</p>
                 </div>

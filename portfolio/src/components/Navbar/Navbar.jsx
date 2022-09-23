@@ -12,7 +12,14 @@ const Navbar = () => {
     <nav>
           <div className="container">
             <div className="logo">
-              <img src={images.logo} />
+              <a href="#home">
+              <motion.div
+                  whileInView={{ x: [20, 0] }}
+                  transition={{ duration: 0.85, ease: 'easeOut' }}
+                >
+                <img src={images.logo} />
+                </motion.div>
+              </a>
             </div>
 
             <div className="links">
@@ -34,7 +41,7 @@ const Navbar = () => {
                   <a href="#contact">Contact</a>
                 </li>
                 <li>
-                  <a href="#hireme" className="active">Hire me</a>
+                  <a href="#contact" className="active">Hire me</a>
                 </li>
               </ul>
             </div>

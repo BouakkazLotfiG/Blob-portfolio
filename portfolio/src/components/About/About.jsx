@@ -2,6 +2,7 @@ import React from 'react'
 import "./About.css"
 import { images } from '../../constants'
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import {motion} from 'framer-motion'
 
 const About = () => {
   return (
@@ -30,9 +31,10 @@ const About = () => {
                   <h3 className="skill-title">HTML</h3>
                   
                   <div className="skill-bar">
-                    <div className="skill-progress" data-progress="70%"></div>
+                    <div className="skill-progress" data-progress="70%">
+                    </div>
                   </div>
-                 
+    
                 </div>
                 <div className="skill css">
                   <h3 className="skill-title">CSS</h3>
@@ -51,8 +53,14 @@ const About = () => {
             </div>
 
             <div className="column-2 image">
+            <motion.div
+              animate={{ x: [-100, 0] }}
+              transition={{ ease: "easeOut", duration: 2 }}
+>
+              <img src={images.person} className="z-index" alt="" />
+              </motion.div>
               <img src={images.points4} className="points" alt="" />
-              <img src={images.about} className="z-index" alt="" />
+              
             </div>
           </div>
         </div>
