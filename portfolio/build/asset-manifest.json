@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c9248cda.css",
-    "main.js": "/static/js/main.75df8e61.js",
+    "main.css": "/static/css/main.d548255b.css",
+    "main.js": "/static/js/main.7529e578.js",
     "static/media/blog3.png": "/static/media/blog3.1b15498aac48414a1985.png",
     "static/media/port8.png": "/static/media/port8.3da3d912c8c8ec647151.png",
     "static/media/port9.png": "/static/media/port9.b73798cddbfa398ed3e9.png",
@@ -22,18 +22,19 @@
     "static/media/port5.jpg": "/static/media/port5.c07a049f5b3a27d802ef.jpg",
     "static/media/cryptoBase.PNG": "/static/media/cryptoBase.15e5e73b3ed60453039e.PNG",
     "static/media/appicon.png": "/static/media/appicon.76a166aab3bc8b395eb9.png",
+    "static/media/designicon.png": "/static/media/designicon.2b8fd6c3bfc46603e5b7.png",
     "static/media/contactbg.png": "/static/media/contactbg.4b4a30b4f5a3bb81d373.png",
-    "static/media/codeicon.png": "/static/media/codeicon.5b51d03eb22992099106.png",
     "static/media/logo.png": "/static/media/logo.ca0242d4d7c4518ae69d.png",
+    "static/media/codeicon.png": "/static/media/codeicon.3d049b4016b0d742daba.png",
     "static/media/letters.png": "/static/media/letters.4f367b712c1332f54d5e.png",
     "static/media/points3.png": "/static/media/points3.cad43da2de2c987f7951.png",
     "static/media/points2.png": "/static/media/points2.d1c839b2a78ccbb9c5a3.png",
     "index.html": "/index.html",
-    "main.c9248cda.css.map": "/static/css/main.c9248cda.css.map",
-    "main.75df8e61.js.map": "/static/js/main.75df8e61.js.map"
+    "main.d548255b.css.map": "/static/css/main.d548255b.css.map",
+    "main.7529e578.js.map": "/static/js/main.7529e578.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9248cda.css",
-    "static/js/main.75df8e61.js"
+    "static/css/main.d548255b.css",
+    "static/js/main.7529e578.js"
   ]
 }

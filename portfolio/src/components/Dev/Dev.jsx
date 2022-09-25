@@ -10,6 +10,8 @@ import {AiFillEye, AiFillCode } from "react-icons/ai"
 
 
 
+
+
 const Dev = () => {
     const [works, setWorks] = useState([]);
     const [activeFilter, setActiveFilter] = useState('All');
@@ -127,11 +129,11 @@ const Dev = () => {
 
 
                         <div className="app__work-content app__flex">
-                          <h4 className="bold-text">{work.name}</h4>
-                          <p className="p-text" style={{ marginTop: 10 }}>{work.desc}</p>
+                          <h3 className="bold-text" style={{ marginTop: 10 }}>{work.name}</h3>
+                          {/* <p className="p-text" style={{ marginTop: 10 }}>{work.desc}</p> */}
 
                           
-                            <p className="p-text">{work.tech}</p>
+                            <a href={`/${work.name}`} className="btn" style={{ marginTop: 10 }}>Read more</a>
                           
                         </div>
                     </div>

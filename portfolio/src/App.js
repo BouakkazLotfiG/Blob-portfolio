@@ -9,19 +9,18 @@ import Services from "./components/Services/Services";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import {motion} from 'framer-motion'
 
-import {useState, useEffect} from 'react'
+
+import { useState, useEffect } from "react";
 
 function App() {
-
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true)
+    setLoading(true);
     setTimeout(() => {
-      setLoading(false)
-    }, 2000)
-  }, [])
-  
+      setLoading(false);
+    }, 2000);
+  }, []);
 
   return (
     <div>
