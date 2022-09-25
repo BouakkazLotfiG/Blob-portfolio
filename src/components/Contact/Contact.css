@@ -1,0 +1,352 @@
+/* Genral Styles */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    z-index: 5;
+    max-width: 92rem;
+    padding: 0 4rem;
+    margin: 0 auto;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    font-size: 1.25rem;
+    color: var(--dark-two);
+    line-height: 1.6;
+}
+
+.column-1 {
+    margin-right: 1.5rem;
+}
+
+.column-2 {
+    margin-left: 1.5rem;
+}
+
+.image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.z-index {
+    position: relative;
+    z-index: 2;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.overlay .shape {
+    width: initial;
+    opacity: 0.13;
+    position: absolute;
+}
+
+.overlay.overlay-lg .shape {
+    height: 55px;
+}
+
+.overlay.overlay-lg .shape.wave {
+    height: initial;
+    width: 88px;
+}
+
+.overlay.overlay-lg .shape.xshape {
+    height: 38px;
+}
+
+.overlay.overlay-sm .shape {
+    filter: brightness(0) invert(1);
+    opacity: 0.15;
+    height: 40px;
+}
+
+.overlay.overlay-sm .shape.wave {
+    height: initial;
+    width: 70px;
+}
+
+.overlay.overlay-sm .shape.xshape {
+    height: 30px;
+}
+
+.points {
+    opacity: 0.3;
+    position: absolute;
+}
+
+.section {
+    padding: 7rem 0;
+    overflow: hidden;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1rem;
+    line-height: 1;
+    font-size: 2.8rem;
+    margin-bottom: 0.6rem;
+}
+
+.title:before {
+    content: attr(data-title);
+    display: block;
+    margin-bottom: 0.4rem;
+    color: var(--main-color);
+    font-size: 1.15rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.title:after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: var(--main-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-header .text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.title-sm {
+    color: var(--dark-one);
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.points-sq {
+    width: 210px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.85rem 2rem;
+    background-color: var(--main-color);
+    color: var(--light-one);
+    border-radius: 2rem;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #540021;
+}
+
+.btn.small {
+    padding: 0.7rem 1.8rem;
+    font-size: 1rem;
+}
+
+/* End Genral Styles */
+
+
+/* Contact */
+.contact {
+    position: relative;
+    width: 100%;
+    padding: 13.5rem 0 8.5rem;
+}
+
+.contact:before,
+.contact:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    left: 0;
+}
+
+.contact:before {
+    top: 0;
+    height: 40%;
+    background: url("../../assets/map.png") center center / cover;
+}
+
+.contact:after {
+    top: 40%;
+    height: 60%;
+    background: url("../../assets/contactbg.png") center bottom / cover;
+}
+
+.contact-box {
+    width: 100%;
+    background-color: var(--light-one);
+    width: 100%;
+    border-radius: 45px;
+    padding: 5.5rem 4.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-info {
+    padding-right: 2rem;
+}
+
+.contact-form {
+    padding-left: 2rem;
+}
+
+.contact-info .title:after {
+    left: 0;
+    transform: initial;
+}
+
+.information-wrap {
+    margin-top: 2rem;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+}
+
+.information:not(:last-child) {
+    margin-bottom: 1.3rem;
+}
+
+.contact-icon {
+    min-width: 67px;
+    height: 67px;
+    display: inline-block;
+    border-radius: 20%;
+    background-color: var(--main-color);
+    color: var(--light-one);
+    text-align: center;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    align-items: center;
+    }
+    
+    .contact-icon svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        margin-top: 20px;
+}
+
+.contact-icon i {
+    line-height: 67px;
+}
+
+.info-text {
+    font-size: 1.3rem;
+    display: inline-block;
+}
+
+.contact-form .title:after {
+    display: none;
+}
+
+.contact-form .title {
+    margin: 0;
+}
+
+.contact-form .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-column-gap: 0.6rem;
+}
+
+.contact-input {
+    padding: 1.2rem 2.1rem;
+    margin: 0.6rem 0;
+    border: none;
+    outline: none;
+    background: #f3f3f3;
+    border-radius: 4rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    transition: 0.3s;
+}
+
+.contact-input::placeholder {
+    font-weight: 400;
+}
+
+.contact-input.textarea {
+    resize: none;
+    min-height: 280px;
+    border-radius: 2rem;
+}
+
+.contact-input:hover {
+    background: #ececec;
+}
+
+.contact-input:focus {
+    background: #eaeaea;
+}
+
+.contact-input .btn {
+    margin-top: 0.6rem;
+}
+
+/* End Contact */
