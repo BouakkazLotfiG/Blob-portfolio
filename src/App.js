@@ -3,12 +3,10 @@ import Contact from "./components/Contact/Contact";
 import Dev from "./components/Dev/Dev";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
-import Portfolio from "./components/Portfolio/Portfolio";
 import Records from "./components/Records/Records";
 import Services from "./components/Services/Services";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
-import {motion} from 'framer-motion'
-
+import { motion } from "framer-motion";
 
 import { useState, useEffect } from "react";
 
@@ -36,7 +34,6 @@ function App() {
         >
           <Hero />
           <Services />
-          {/* <Portfolio /> */}
           <Dev />
           <About />
           <Records />
