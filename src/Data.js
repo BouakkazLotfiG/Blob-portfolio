@@ -8,6 +8,7 @@ const projects = [
     imgUrl: require("../src/assets/portfolio/cryptoBase.PNG"),
     desc: "A cryptocurrency web application displaying updated informations about the top 10 crypto in the world",
     tech: "React, Mongodb, GraphQl",
+    logo: require("../src/assets/projectsLogo/crypto.png"),
   },
   {
     id: "1",
@@ -18,6 +19,7 @@ const projects = [
     imgUrl: require("../src/assets/portfolio/hoobank.PNG"),
     desc: "A modern bank Website ",
     tech: "React, Mongodb, GraphQl",
+    logo: require("../src/assets/projectsLogo/hoobank.png"),
   },
   {
     id: "2",
@@ -28,6 +30,7 @@ const projects = [
     imgUrl: require("../src/assets/portfolio/netflix.PNG"),
     desc: "Netflix clone",
     tech: "React, Mongodb, GraphQl",
+    logo: require("../src/assets/projectsLogo/hoobank.png"),
   },
   {
     id: "3",
@@ -38,6 +41,7 @@ const projects = [
     imgUrl: require("../src/assets/portfolio/cryptoBase.PNG"),
     desc: "this proket is goooooooood",
     tech: "React, Mongodb, GraphQl",
+    logo: require("../src/assets/projectsLogo/hoobank.png"),
   },
   {
     id: "4",
@@ -48,6 +52,7 @@ const projects = [
     imgUrl: require("../src/assets/portfolio/cryptoBase.PNG"),
     desc: "TikTok Clone",
     tech: "TypeScript, Nextjs, React, Mongodb, GraphQl",
+    logo: require("../src/assets/projectsLogo/hoobank.png"),
   },
   {
     id: "5",
@@ -58,6 +63,7 @@ const projects = [
     imgUrl: require("../src/assets/portfolio/cryptoBase.PNG"),
     desc: "this proket is goooooooood",
     tech: "React, Mongodb, GraphQl",
+    logo: require("../src/assets/projectsLogo/hoobank.png"),
   },
 ];
 

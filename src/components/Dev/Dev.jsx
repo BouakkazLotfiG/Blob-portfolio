@@ -89,7 +89,7 @@ const Dev = () => {
           {filterWork.map((work, index) => (
             <div className="app__work-item app__flex" key={index}>
               <div className="app__work-img app__flex">
-                <img src={work.imgUrl} alt={work.name} />
+                <img src={work.logo} alt={work.name} />
 
                 <motion.div
                   whileHover={{ opacity: [0, 1] }}
@@ -127,25 +127,13 @@ const Dev = () => {
                 <h3 className="bold-text" style={{ marginTop: 10 }}>
                   {work.name}
                 </h3>
-                {/* <p className="p-text" style={{ marginTop: 10 }}>{work.desc}</p> */}
 
-                {/* <a
-                  href={`/${work.name}`}
-                  className="btn"
-                  style={{ marginTop: 10 }}
-                >
-                  Read more
-                </a> */}
                 <button
                   className="btn"
                   ordre={index}
                   onClick={(ev) => {
                     setTriggeredWork(`${work.id}`);
                     setButtonPopup(true);
-                    // console.log("work\n ", work);
-                    // console.log(typeof triggeredWork);
-                    console.log("triggeredwork \n", triggeredWork);
-                    // console.log(filterWork);
                   }}
                 >
                   read more
@@ -155,30 +143,7 @@ const Dev = () => {
           ))}
         </motion.div>
       </div>
-      {/* <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-        <>
-          {setTriggeredWork("0")}
-          <h1>{filterWork[triggeredWork].name}</h1>
-          <p>{filterWork[triggeredWork].desc}</p>
-          <img src={filterWork[triggeredWork].imgUrl} alt="" />
-          <div className="social-links-popup">
-            <a
-              href={filterWork[triggeredWork].codeLink}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaGithub size={30} />
-            </a>
-            <a
-              href={filterWork[triggeredWork].projectLink}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <AiFillEye size={30} />
-            </a>
-          </div>
-        </>
-      </Popup> */}
+
       <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
         <>
           {works.map((work, index) => {
@@ -188,13 +153,27 @@ const Dev = () => {
                   <h1>{work.name}</h1>
                   <p>{work.desc}</p>
                   <img src={work.imgUrl} alt="" />
-                  <div className="social-links-popup">
-                    <a href={work.codeLink} target="_blank" rel="noreferrer">
-                      <FaGithub size={30} />
-                    </a>
-                    <a href={work.projectLink} target="_blank" rel="noreferrer">
-                      <AiFillEye size={30} />
-                    </a>
+                  <div className="social-links-popup links">
+                    <div>
+                      <a
+                        href={work.codeLink}
+                        className="social-item"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FaGithub size={30} />
+                      </a>
+                    </div>
+                    <div>
+                      <a
+                        href={work.projectLink}
+                        className="social-item"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <AiFillEye size={30} />
+                      </a>
+                    </div>
                   </div>
                 </React.Fragment>
               );

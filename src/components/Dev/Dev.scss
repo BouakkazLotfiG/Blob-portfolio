@@ -361,11 +361,19 @@
 /* End Portfolio */
 
 .social-links-popup {
-    // background-color: #000;
+    
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    // background-color: #000;
 
+}
 
+.links a:hover {
+    color: var(--main-color);
+}
 
+.links a.active:hover {
+    color: var(--light-one);
+    background-color: #6b44e0;
 }

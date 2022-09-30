@@ -1,5 +1,6 @@
 import "./Popup.scss";
 import { motion } from "framer-motion";
+import { AiFillCloseCircle } from "react-icons/ai";
 
 function Popup(props) {
   return props.trigger ? (
@@ -9,9 +10,9 @@ function Popup(props) {
         transition={{ duration: 0.25 }}
       >
         <div className="popup-inner imgProject">
-          <button className="close-btn" onClick={() => props.setTrigger(false)}>
-            Close
-          </button>
+          <a className="close-btn" onClick={() => props.setTrigger(false)}>
+            <AiFillCloseCircle size={30} />
+          </a>
           {props.children}
         </div>
       </motion.div>
