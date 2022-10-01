@@ -4,19 +4,19 @@ import { images } from "../../constants";
 import { motion } from "framer-motion";
 
 const skills = [
+  images.html,
   images.css,
+  images.javascript,
+  images.react,
+  images.typescript,
+  images.python,
   images.git,
   images.graphql,
-  images.html,
-  images.javascript,
   images.mu5,
   images.node,
-  images.python,
-  images.react,
   images.redux,
   images.sass,
   images.tailwind,
-  images.typescript,
 ];
 
 const About = () => {
