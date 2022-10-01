@@ -124,7 +124,10 @@ const Dev = () => {
               </div>
 
               <div className="app__work-content app__flex">
-                <h3 className="bold-text" style={{ marginTop: 10 }}>
+                <h3
+                  className="bold-text"
+                  style={{ marginTop: 10, marginBottom: 10 }}
+                >
                   {work.name}
                 </h3>
 

@@ -23,7 +23,7 @@ const Hero = () => {
           <img src={images.wave} className="shape wave wave1" alt="" />
           <img src={images.wave} className="shape wave wave2" alt="" />
           <img src={images.triangle} className="shape triangle" alt="" />
-          <img src={images.letters} className="letters" alt="" />
+          <img src={images.logo} className="letters" alt="" />
 
           <img src={images.points1} className="points points1" alt="" />
         </div>

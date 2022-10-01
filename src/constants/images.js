@@ -34,7 +34,34 @@ import designicon from "../assets/designicon.png";
 import map from "../assets/map.png";
 import person from "../assets/person.png";
 
+import css from "../assets/skills/css.png";
+import git from "../assets/skills/git.png";
+import graphql from "../assets/skills/graphql.png";
+import html from "../assets/skills/html.png";
+import javascript from "../assets/skills/javascript.png";
+import mu5 from "../assets/skills/mu5.png";
+import node from "../assets/skills/node.png";
+import python from "../assets/skills/python.png";
+import react from "../assets/skills/react.png";
+import redux from "../assets/skills/redux.png";
+import sass from "../assets/skills/sass.png";
+import tailwind from "../assets/skills/tailwind.png";
+import typescript from "../assets/skills/typescript.png";
+
 export default {
+  css,
+  html,
+  javascript,
+  mu5,
+  node,
+  typescript,
+  tailwind,
+  react,
+  redux,
+  git,
+  sass,
+  python,
+  graphql,
   circle,
   halfcircle,
   letters,

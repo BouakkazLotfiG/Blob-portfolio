@@ -30,7 +30,7 @@ const projects = [
     imgUrl: require("../src/assets/portfolio/netflix.PNG"),
     desc: "Netflix clone",
     tech: "React, Mongodb, GraphQl",
-    logo: require("../src/assets/projectsLogo/hoobank.png"),
+    logo: require("../src/assets/projectsLogo/Netflix.png"),
   },
   {
     id: "3",

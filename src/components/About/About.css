@@ -1,3 +1,4 @@
+
 /* About */
 
 .about {
@@ -69,3 +70,29 @@
 }
 
 /* End About */
+.image-item {
+    min-height: 5rem;
+    min-width: 5rem;
+}
+
+.image-item img {
+
+    width: 100%;
+    height: 100%;
+    margin-right: 40px;
+    pointer-events: none;
+}
+
+.inner-carousel {
+    display: flex;
+    background-color: blue;
+
+
+}
+
+.carousel {
+    margin: 0 20%;
+
+    cursor: grab;
+    overflow: hidden;
+}
