@@ -1,4 +1,14 @@
 /* Genral Styles */
+.social-media a {
+    color: #7b7b7b;
+    font-size: 1.3rem;
+    margin-right: 0.4rem;
+    transition: 0.3s;
+}
+
+.social-media a:hover {
+    color: var(--main-color);
+}
 .app__header-circles {
     flex: 0.75;
     display: flex;
