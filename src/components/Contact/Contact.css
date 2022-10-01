@@ -231,7 +231,7 @@ img {
 .contact:after {
     top: 40%;
     height: 60%;
-    background: url("../../assets/contactbg.png") center bottom / cover;
+    background: var(--light-one) center bottom / cover;
 }
 
 .contact-box {

@@ -69,9 +69,9 @@ const About = () => {
               </motion.div>
             </div>
 
-            <a href="#" className="btn">
+            {/* <a href="#" className="btn">
               Read more
-            </a>
+            </a> */}
           </div>
 
           <div className="column-2 image">
