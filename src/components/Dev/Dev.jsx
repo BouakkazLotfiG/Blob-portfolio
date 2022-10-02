@@ -8,6 +8,7 @@ import { images } from "../../constants";
 import { AiFillEye, AiFillCode } from "react-icons/ai";
 import Popup from "../../constants/Popup";
 import { FaGithub } from "react-icons/fa";
+import CardPopup from "./CardPopup";
 
 const Dev = () => {
   const [works, setWorks] = useState([]);
@@ -40,11 +41,13 @@ const Dev = () => {
     }, 500);
   };
 
-  // console.log(typeof triggeredWork);
-
-  // console.log(buttonPopup);
-  // console.log(triggeredWork);
-  // console.log(typeof works[triggeredWork]);
+  const filterWorks = (filteredData, triggeredWork) => {
+    const filteredWork = filteredData.filter(
+      (work) => work.id === triggeredWork
+    );
+    // console.log(filteredWork);
+    return filteredWork;
+  };
 
   return (
     <section className="portfolio section" id="portfolio">
@@ -147,7 +150,7 @@ const Dev = () => {
         </motion.div>
       </div>
 
-      <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+      {/* <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
         <>
           {works.map((work, index) => {
             if (triggeredWork == index) {
@@ -183,6 +186,10 @@ const Dev = () => {
             }
           })}
         </>
+      </Popup> */}
+
+      <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+        <CardPopup work={filterWorks(works, triggeredWork)} />
       </Popup>
     </section>
   );
