@@ -4,7 +4,7 @@ import { images } from '../../constants'
 
 const Services = () => {
   return (
-    <section className="services section" id="services">
+    <section className="services section scroll-area" id="services">
       <div className="container">
         <div className="section-header">
           <h3 className="title" data-title="What I Do">

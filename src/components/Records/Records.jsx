@@ -5,7 +5,7 @@ import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 const Records = () => {
   return (
-    <section className="records">
+    <section className="records ">
       <div className="overlay overlay-sm">
         <img src={images.square} alt="" className="shape square1" />
         <img src={images.square} alt="" className="shape square2" />

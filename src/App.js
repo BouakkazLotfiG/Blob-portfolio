@@ -32,13 +32,15 @@ function App() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.9 }}
         >
-          <Hero />
-          <Services />
-          <Dev />
-          <About />
-          <Records />
-          <Contact />
-          <Footer />
+          <div className="parent">
+            <Hero />
+            <Services />
+            <Dev />
+            <About />
+            <Records />
+            <Contact />
+            <Footer />
+          </div>
         </motion.div>
       )}
     </div>

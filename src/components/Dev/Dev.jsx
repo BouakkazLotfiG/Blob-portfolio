@@ -49,7 +49,7 @@ const Dev = () => {
   };
 
   return (
-    <section className="portfolio section" id="portfolio">
+    <section className="portfolio section scroll-area" id="portfolio">
       <div className="background-bg">
         <div className="overlay overlay-sm">
           <img src={images.halfcircle} className="shape half-circle1" alt="" />

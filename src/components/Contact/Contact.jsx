@@ -1,19 +1,41 @@
-import React from 'react'
-import "./Contact.css"
-import {FaLocationArrow} from 'react-icons/fa'
-import {MdEmail} from 'react-icons/md'
-import {AiFillPhone} from 'react-icons/ai'
+import { useRef, useState } from "react";
+import emailjs from "emailjs-com";
+import "./Contact.css";
+import { FaLocationArrow } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { AiFillPhone } from "react-icons/ai";
 
 const Contact = () => {
+  const formRef = useRef();
+  const [done, setDone] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_joh96rl",
+        "template_ukhgvqj",
+        formRef.current,
+        "VSVv7AdDfHXVEAeYd"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setDone(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
-    <section className="contact" id="contact">
+    <section className="contact section" id="contact">
       <div className="container">
         <div className="contact-box">
           <div className="contact-info">
             <h3 className="title">Get in touch</h3>
             <p className="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-              rerum odio incidunt doslorum officia dolorem eaque aprim?
+              Got a question or proposal, or just want to say hello? Go ahead.
             </p>
             <div className="information-wrap">
               <div className="information">
@@ -41,18 +63,20 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="contact-form">
+          <form ref={formRef} onSubmit={handleSubmit} className="contact-form">
             <h3 className="title">Contact me</h3>
             <div className="row">
               <input
                 type="text"
                 className="contact-input"
                 placeholder="First Name"
+                name="user_first_name"
               />
               <input
                 type="text"
                 className="contact-input"
                 placeholder="Last Name"
+                name="user_last_name"
               />
             </div>
 
@@ -61,11 +85,13 @@ const Contact = () => {
                 type="text"
                 className="contact-input"
                 placeholder="Phone"
+                name="user_phone"
               />
               <input
                 type="email"
                 className="contact-input"
                 placeholder="Email"
+                name="user_email"
               />
             </div>
 
@@ -74,16 +100,18 @@ const Contact = () => {
                 name="message"
                 className="contact-input textarea"
                 placeholder="Message"
-              ></textarea>
+                rows="5"
+              />
             </div>
-            <a href="/google.com" className="btn">
+            <button href="/google.com" className="btn">
               Send
-            </a>
-          </div>
+            </button>
+            {done && "Thank you..."}
+          </form>
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default Contact
+export default Contact;

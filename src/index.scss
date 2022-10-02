@@ -11,6 +11,7 @@
 
 /* Genral Styles */
 
+
 .app {
   text-align: center;
   display: flex;
@@ -37,7 +38,10 @@ button,
 input,
 textarea {
   font-family: "Poppins", sans-serif;
+
 }
+
+
 
 a {
   text-decoration: none;
@@ -148,6 +152,7 @@ img {
 .section {
   padding: 7rem 0;
   overflow: hidden;
+
 }
 
 .section-header {
@@ -625,7 +630,7 @@ img {
     font-size: 1.05rem;
   }
 
-  
+
 
   .back-btn {
     width: 43px;
