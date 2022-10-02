@@ -20,7 +20,7 @@
   width: 100%;
   max-width: 390px;
   min-height: 520px;
-  background-color: var(--light-three);
+  background-color: var(--light-one);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -495,9 +495,7 @@
     font-size: 1.05rem;
   }
 
-  .back-btn-wrap {
-    margin-left: 1.3rem;
-  }
+  
 
   .back-btn {
     width: 43px;
