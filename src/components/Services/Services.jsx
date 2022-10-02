@@ -15,7 +15,7 @@ const Services = () => {
 
         <div className="cards">
           <div className="card-wrap">
-            <div className="card" data-card="Code">
+            <div className="card">
               <div className="card-content z-index">
                 <img src={images.codeicon} className="icon" alt="" />
                 <h3 className="title-sm">Front end Development</h3>
@@ -36,7 +36,7 @@ const Services = () => {
               className="points points2 points-sq"
               alt=""
             />
-            <div className="card" data-card="App">
+            <div className="card">
               <div className="card-content z-index">
                 <img src={images.designicon} className="icon" alt="" />
                 <h3 className="title-sm">Full stack Development</h3>
