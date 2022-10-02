@@ -20,21 +20,23 @@ const Contact = () => {
                 <div className="contact-icon">
                   <FaLocationArrow />
                 </div>
-                <p className="info-text">92 Cherry Drive Unimodale, NY 11553</p>
+                <p className="info-text">
+                  Cité Kaid Ahmed bloc16 N22, Tiaret-Algeria
+                </p>
               </div>
 
               <div className="information">
                 <div className="contact-icon">
                   <MdEmail />
                 </div>
-                <p className="info-text">lorem@ipsum.com</p>
+                <p className="info-text">Bouakkaz144.lotfi@gmail.com</p>
               </div>
 
               <div className="information">
                 <div className="contact-icon">
                   <AiFillPhone />
                 </div>
-                <p className="info-text">123-456-789</p>
+                <p className="info-text">+213 562 29 43 49</p>
               </div>
             </div>
           </div>
