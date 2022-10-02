@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import { images } from "../../constants";
 import { AiFillEye, AiFillCode } from "react-icons/ai";
 import Popup from "../../constants/Popup";
-import { FaGithub } from "react-icons/fa";
 import CardPopup from "./CardPopup";
 
 const Dev = () => {
@@ -149,45 +148,6 @@ const Dev = () => {
           ))}
         </motion.div>
       </div>
-
-      {/* <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-        <>
-          {works.map((work, index) => {
-            if (triggeredWork == index) {
-              return (
-                <React.Fragment key={index}>
-                  <h1>{work.name}</h1>
-                  <p>{work.desc}</p>
-                  <img src={work.imgUrl} alt="" />
-                  <div className="social-links-popup links">
-                    <div>
-                      <a
-                        href={work.codeLink}
-                        className="social-item"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <FaGithub size={30} />
-                      </a>
-                    </div>
-                    <div>
-                      <a
-                        href={work.projectLink}
-                        className="social-item"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <AiFillEye size={30} />
-                      </a>
-                    </div>
-                  </div>
-                </React.Fragment>
-              );
-            }
-          })}
-        </>
-      </Popup> */}
-
       <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
         <CardPopup work={filterWorks(works, triggeredWork)} />
       </Popup>

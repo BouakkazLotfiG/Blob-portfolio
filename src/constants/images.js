@@ -48,7 +48,7 @@ import sass from "../assets/skills/sass.png";
 import tailwind from "../assets/skills/tailwind.png";
 import typescript from "../assets/skills/typescript.png";
 
-export default {
+const images = {
   css,
   html,
   javascript,
@@ -95,3 +95,5 @@ export default {
   port8,
   port9,
 };
+
+export default images;

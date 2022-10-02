@@ -10,9 +10,9 @@ function Popup(props) {
         transition={{ duration: 0.25 }}
       >
         <div className="popup-inner imgProject">
-          <a className="close-btn" onClick={() => props.setTrigger(false)}>
+          <button className="close-btn" onClick={() => props.setTrigger(false)}>
             <AiFillCloseCircle size={30} />
-          </a>
+          </button>
           {props.children}
         </div>
       </motion.div>

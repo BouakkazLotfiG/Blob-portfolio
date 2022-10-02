@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Footer.css"
-import {FaFacebook, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
-import {AiOutlineArrowUp} from 'react-icons/ai'
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { AiOutlineArrowUp } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
 
             <div className="back-btn-wrap">
-              <a href="#" className="back-btn">
+              <a href="#header" className="back-btn">
                 <AiOutlineArrowUp />
               </a>
             </div>
@@ -48,6 +48,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer

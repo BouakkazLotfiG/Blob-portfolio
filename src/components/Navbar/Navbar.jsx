@@ -10,74 +10,74 @@ const Navbar = () => {
 
   return (
     <nav>
-          <div className="container">
-            <div className="logo">
-              <a href="#home">
-              <motion.div
-                  whileInView={{ x: [20, 0] }}
-                  transition={{ duration: 0.85, ease: 'easeOut' }}
-                >
-                <img src={images.logo} />
-                </motion.div>
+      <div className="container">
+        <div className="logo">
+          <a href="#home">
+            <motion.div
+              whileInView={{ x: [20, 0] }}
+              transition={{ duration: 0.85, ease: "easeOut" }}
+            >
+              <img src={images.logo} alt="logo" />
+            </motion.div>
+          </a>
+        </div>
+
+        <div className="links">
+          <ul>
+            <li>
+              <a href="#header">Home</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <a href="#contact" className="active">
+                Hire me
               </a>
-            </div>
+            </li>
+          </ul>
+        </div>
 
-            <div className="links">
-              <ul>
-                <li>
-                  <a href="#header">Home</a>
-                </li>
-                <li>
-                  <a href="#services">Services</a>
-                </li>
-                <li>
-                  <a href="#portfolio">Portfolio</a>
-                </li>
-                <li>
-                  <a href="#about">About</a>
-                </li>
-                
-                <li>
-                  <a href="#contact">Contact</a>
-                </li>
-                <li>
-                  <a href="#contact" className="active">Hire me</a>
-                </li>
-              </ul>
-            </div>
-
-            {/* <div className="hamburger-menu">
+        {/* <div className="hamburger-menu">
               <div className="bar"></div>
             </div> */}
 
+        <div className="app__navbar-menu">
+          <HiMenuAlt4 onClick={() => setToggle(true)} />
 
-
-            <div className="app__navbar-menu">
-              <HiMenuAlt4 onClick={() => setToggle(true)} />
-
-              {toggle && (
-                <motion.div
-                  whileInView={{ x: [300, 0] }}
-                  transition={{ duration: 0.85, ease: 'easeOut' }}
-                >
-                  <HiX onClick={() => setToggle(false)} />
-                  <ul>
-                    {['home', 'services', 'portfolio', 'about', 'contact'].map((item) => (
-                      <li key={item}>
-                        <a href={`#${item}`} onClick={() => setToggle(false)}>
-                          {item}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </motion.div>
-              )}
-            </div>
-
-
-          </div>
-        </nav>
-  )
+          {toggle && (
+            <motion.div
+              whileInView={{ x: [300, 0] }}
+              transition={{ duration: 0.85, ease: "easeOut" }}
+            >
+              <HiX onClick={() => setToggle(false)} />
+              <ul>
+                {["home", "services", "portfolio", "about", "contact"].map(
+                  (item) => (
+                    <li key={item}>
+                      <a href={`#${item}`} onClick={() => setToggle(false)}>
+                        {item}
+                      </a>
+                    </li>
+                  )
+                )}
+              </ul>
+            </motion.div>
+          )}
+        </div>
+      </div>
+    </nav>
+  );
 }
 
 export default Navbar
