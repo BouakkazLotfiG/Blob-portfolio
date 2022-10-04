@@ -9,6 +9,10 @@ const Contact = () => {
   const formRef = useRef();
   const [done, setDone] = useState(false);
 
+  function refreshPage() {
+    window.location.reload(false);
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
@@ -106,7 +110,7 @@ const Contact = () => {
             <button href="/google.com" className="btn">
               Send
             </button>
-            {done && "Thank you..."}
+            {done && refreshPage()}
           </form>
         </div>
       </div>

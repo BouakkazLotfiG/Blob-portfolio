@@ -8,26 +8,21 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 const Hero = () => {
   return (
     <header id="header">
-      <motion.div
-        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-        transition={{ duration: 0.75 }}
-      >
-        <div className="overlay overlay-lg">
-          <img src={images.square} className="shape square" alt="" />
-          <img src={images.circle} className="shape circle" alt="" />
+      <div className="overlay overlay-lg">
+        <img src={images.square} className="shape square" alt="" />
+        <img src={images.circle} className="shape circle" alt="" />
 
-          <img src={images.halfcircle} className="shape half-circle1" alt="" />
+        <img src={images.halfcircle} className="shape half-circle1" alt="" />
 
-          <img src={images.halfcircle} className="shape half-circle2" alt="" />
-          <img src={images.x} className="shape xshape" alt="" />
-          <img src={images.wave} className="shape wave wave1" alt="" />
-          <img src={images.wave} className="shape wave wave2" alt="" />
-          <img src={images.triangle} className="shape triangle" alt="" />
-          <img src={images.logo} className="letters" alt="" />
+        <img src={images.halfcircle} className="shape half-circle2" alt="" />
+        <img src={images.x} className="shape xshape" alt="" />
+        <img src={images.wave} className="shape wave wave1" alt="" />
+        <img src={images.wave} className="shape wave wave2" alt="" />
+        <img src={images.triangle} className="shape triangle" alt="" />
+        <img src={images.logo} className="letters" alt="" />
 
-          <img src={images.points1} className="points points1" alt="" />
-        </div>
-      </motion.div>
+        <img src={images.points1} className="points points1" alt="" />
+      </div>
 
       <Navbar />
 

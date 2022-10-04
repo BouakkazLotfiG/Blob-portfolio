@@ -7,8 +7,10 @@ function CarPopup({ work }) {
     <>
       <h1>{work[0].name}</h1>
       <p>{work[0].desc}</p>
+
       <img src={work[0].imgUrl} alt="" />
       <div className="social-links-popup links">
+        <h4>{work[0].tech}</h4>
         <div>
           <a
             href={work[0].codeLink}

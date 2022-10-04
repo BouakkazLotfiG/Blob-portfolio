@@ -13,12 +13,7 @@ const Navbar = () => {
       <div className="container">
         <div className="logo">
           <a href="#home">
-            <motion.div
-              whileInView={{ x: [20, 0] }}
-              transition={{ duration: 0.85, ease: "easeOut" }}
-            >
-              <img src={images.logo} alt="logo" />
-            </motion.div>
+            <img src={images.logo} alt="logo" />
           </a>
         </div>
 

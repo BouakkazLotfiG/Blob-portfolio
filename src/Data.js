@@ -6,8 +6,8 @@ const projects = [
     projectLink: "https://bl-crypto.netlify.app/",
     codeLink: "https://github.com/BouakkazLotfiG/crypto-app",
     imgUrl: require("../src/assets/portfolio/cryptoBase.PNG"),
-    desc: "A cryptocurrency web application displaying updated informations about the top 10 crypto in the world",
-    tech: "React, Mongodb, GraphQl",
+    desc: "CryptoBase is a fully responsive cryptocurrency website, Responsive for all devices, build using HTML, CSS, and React.",
+    tech: "React, Firebase, Light/Dark mode",
     logo: require("../src/assets/projectsLogo/crypto.png"),
   },
   {
@@ -17,8 +17,8 @@ const projects = [
     projectLink: "https://bl-bank.netlify.app/",
     codeLink: "https://github.com/BouakkazLotfiG/bank-app",
     imgUrl: require("../src/assets/portfolio/hoobank.PNG"),
-    desc: "A modern bank Website ",
-    tech: "React, Mongodb, GraphQl",
+    desc: "HooBank - Modern UI/UX website displaying main advantages and services thta HooBank provides",
+    tech: "React, Tailwind CSS",
     logo: require("../src/assets/projectsLogo/hoobank.png"),
   },
   {
@@ -28,8 +28,8 @@ const projects = [
     projectLink: "https://bl-netflix.netlify.app/",
     codeLink: "https://github.com/BouakkazLotfiG/netflix-clone",
     imgUrl: require("../src/assets/portfolio/netflix.PNG"),
-    desc: "Netflix clone",
-    tech: "React, Mongodb, GraphQl",
+    desc: "A Netflix clone displaying diffrent categories of movies using the TMDB Api",
+    tech: "React, Firebase",
     logo: require("../src/assets/projectsLogo/Netflix.png"),
   },
   {
