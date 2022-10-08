@@ -1,6 +1,7 @@
 /* Footer */
 
 .footer {
+    position: relative;
     background-color: #222;
     padding: 6rem 0;
 }
@@ -165,3 +166,31 @@ display: flex;
     background-color: #43001b;
 }
 
+.custom-shape-divider-top-1665218431 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1000;
+}
+
+.custom-shape-divider-top-1665218431 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 66px;
+}
+
+.custom-shape-divider-top-1665218431 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1665218431 svg {
+        width: calc(100% + 1.3px);
+        height: 53px;
+    }
+}

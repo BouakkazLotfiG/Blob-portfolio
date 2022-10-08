@@ -14,6 +14,7 @@
     text-align: center;
     grid-column-gap: 1.5rem;
     grid-row-gap: 2rem;
+    position: relative;
 }
 
 .record-circle {
@@ -86,3 +87,63 @@
 }
 
 /* End Records */
+.custom-shape-divider-top-1665218615 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    padding-bottom: 10px;
+}
+
+.custom-shape-divider-top-1665218615 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 66px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1665218615 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1665218615 svg {
+        width: calc(100% + 1.3px);
+        height: 53px;
+    }
+}
+
+
+.custom-shape-divider-bottom-1665218673 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+}
+
+.custom-shape-divider-bottom-1665218673 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 37px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1665218673 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1665218673 svg {
+        width: calc(100% + 1.3px);
+        height: 53px;
+    }
+}
