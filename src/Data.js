@@ -1,7 +1,7 @@
 const projects = [
   {
     id: "0",
-    tag: "Frontend",
+    tag: "React",
     name: "CryptoBase",
     projectLink: "https://bl-crypto.netlify.app/",
     codeLink: "https://github.com/BouakkazLotfiG/crypto-app",
@@ -12,7 +12,7 @@ const projects = [
   },
   {
     id: "1",
-    tag: "Frontend",
+    tag: "React",
     name: "Hoobank",
     projectLink: "https://bl-bank.netlify.app/",
     codeLink: "https://github.com/BouakkazLotfiG/bank-app",
@@ -23,7 +23,7 @@ const projects = [
   },
   {
     id: "2",
-    tag: "Frontend",
+    tag: "React",
     name: "Netflix",
     projectLink: "https://bl-netflix.netlify.app/",
     codeLink: "https://github.com/BouakkazLotfiG/netflix-clone",
@@ -34,7 +34,7 @@ const projects = [
   },
   {
     id: "3",
-    tag: "Frontend",
+    tag: "React",
     name: "Spotify",
     projectLink: "https://bl-spotify.netlify.app/",
     codeLink: "https://github.com/BouakkazLotfiG/Spotify-clone",
@@ -45,7 +45,7 @@ const projects = [
   },
   {
     id: "4",
-    tag: "Full stack",
+    tag: "Angular",
     name: "TikTok",
     projectLink: "google.com",
     codeLink: "github.com",
@@ -56,7 +56,7 @@ const projects = [
   },
   {
     id: "5",
-    tag: "Full stack",
+    tag: "Angular",
     name: "ToDo",
     projectLink: "google.com",
     codeLink: "github.com",

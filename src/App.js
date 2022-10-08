@@ -34,10 +34,10 @@ function App() {
         >
           <div className="parent">
             <Hero />
-            <Services />
             <Dev />
-            <About />
+            <Services />
             <Records />
+            <About />
             <Contact />
             <Footer />
           </div>
