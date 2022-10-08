@@ -56,6 +56,7 @@
 }
 
 .app__work-portfolio {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -173,7 +174,7 @@
 .portfolio {
     position: relative;
     width: 100%;
-    background-color: var(--light-two);
+    background-color: var(--main-color);
 }
 
 .background-bg {
@@ -404,6 +405,37 @@
 @media (max-width: 767px) {
     .custom-shape-divider-top-1665218431 svg {
         width: calc(100% + 1.3px);
+        height: 100%;
+        }
+        }
+        
+        .wave-buttom-portfolio {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        
+        }
+        
+        .wave-buttom-portfolio svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 37px;
+            transform: rotateY(180deg);
+        }
+        
+        .wave-buttom-portfolio .shape-fill {
+            fill: #FFFFFF;
+        }
+        
+        /** For mobile devices **/
+        @media (max-width: 767px) {
+            .wave-buttom-portfolio svg {
+                width: calc(100% + 1.3px);
         height: 53px;
+        background-color: var(--main-color);
     }
 }
