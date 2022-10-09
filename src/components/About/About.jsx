@@ -31,7 +31,7 @@ const About = () => {
     <section className="about " id="about">
       <div className="container">
         <div className="section-header">
-          <h3 className="title" data-title="Who Am I">
+          <h3 className="title gradient-text" data-title="Who Am I">
             About me
           </h3>
         </div>

@@ -10,7 +10,11 @@
 }
 
 /* Genral Styles */
-
+.gradient-text {
+  background-image: linear-gradient(90deg, var(--main-color), #0bac96);
+  background-clip: text;
+  color: transparent;
+}
 
 .app {
   text-align: center;

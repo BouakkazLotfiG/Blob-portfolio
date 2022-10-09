@@ -7,7 +7,7 @@ const Services = () => {
     <section className="services section scroll-area" id="services">
       <div className="container">
         <div className="section-header">
-          <h3 className="title" data-title="What I Do">
+          <h3 className="title gradient-text" data-title="What I Do">
             Services
           </h3>
           <p className="text">Here are the services and technologies i use</p>

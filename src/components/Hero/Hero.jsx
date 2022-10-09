@@ -30,7 +30,7 @@ const Hero = () => {
         <div className="container grid-2">
           <div className="column-1">
             <p className="text">Hello, I'm</p>
-            <h1 className="header-title">Lotfi Bouakkaz</h1>
+            <h1 className="header-title gradient-text">Lotfi Bouakkaz</h1>
             <p className="text">
               I develop beautiful and scalable frontend web applications with
               great user experiences.
