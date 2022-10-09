@@ -3,8 +3,8 @@
 :root {
   --dark-one: #333;
   --dark-two: #7a7a7a;
-  --main-color: #FF0066;
-  --light-one: #fff;
+  --main-color: #00473e;
+    --light-one: #f2f7f5;
   --light-two: #f9fafb;
   --light-three: #f6f7fb;
 }
@@ -150,7 +150,7 @@ img {
 }
 
 .section {
-  padding: 7rem 0;
+  padding: 1rem 0;
   overflow: hidden;
 
 }
@@ -222,7 +222,8 @@ img {
 }
 
 .btn:hover {
-  background-color: #43001b;
+  background-color: var(--light-one);
+    color: var(--main-color);
 }
 
 .btn.small {

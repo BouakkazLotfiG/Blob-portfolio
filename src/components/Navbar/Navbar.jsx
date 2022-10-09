@@ -36,9 +36,7 @@ const Navbar = () => {
               <a href="#contact">Contact</a>
             </li>
             <li>
-              <a href="#contact" className="active">
-                Hire me
-              </a>
+              <button className="btn small">Hire me</button>
             </li>
           </ul>
         </div>

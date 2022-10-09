@@ -125,10 +125,7 @@ img {
     position: absolute;
 }
 
-.section {
-    padding: 7rem 0;
-    overflow: hidden;
-}
+
 
 .section-header {
     text-align: center;
@@ -194,9 +191,7 @@ img {
     transition: 0.3s;
 }
 
-.btn:hover {
-    background-color: #540021;
-}
+
 
 .btn.small {
     padding: 0.7rem 1.8rem;
