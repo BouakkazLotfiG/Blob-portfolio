@@ -1,8 +1,8 @@
-import React from 'react'
-import "./Records.css"
-import { images } from '../../constants'
-import CountUp from 'react-countup';
-import VisibilitySensor from 'react-visibility-sensor';
+import React from "react";
+import "./Records.css";
+import { images } from "../../constants";
+import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 const Records = () => {
   return (
     <section className="records ">
@@ -49,7 +49,7 @@ const Records = () => {
         <div className="wrap">
           <div className="record-circle active">
             <h2 className="number" data-num="174">
-              <CountUp end={3} redraw={true}>
+              <CountUp end={2} redraw={true}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
                     <span ref={countUpRef} />
@@ -91,6 +91,6 @@ const Records = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Records
+export default Records;
