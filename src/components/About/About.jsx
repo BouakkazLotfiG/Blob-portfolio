@@ -2,6 +2,8 @@ import { useState, useRef, useEffect } from "react";
 import "./About.css";
 import { images } from "../../constants";
 import { motion } from "framer-motion";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const skills = [
   images.html,
@@ -27,6 +29,10 @@ const About = () => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
 
+  useEffect(() => {
+    Aos.init({ duration: 1300 });
+  }, []);
+
   return (
     <section className="about " id="about">
       <div className="container">
@@ -37,7 +43,7 @@ const About = () => {
         </div>
 
         <div className="section-body grid-2">
-          <div className="column-1">
+          <div data-aos="fade-right" data-aos-offset="50" className="column-1">
             <h3 className="title-sm">Hello, I'm</h3>
             <p className="text">
               Bouakkaz Lotfi, I’m 24 years old, I graduated from University
@@ -74,7 +80,11 @@ const About = () => {
             </a> */}
           </div>
 
-          <div className="column-2 image">
+          <div
+            data-aos="fade-left"
+            data-aos-offset="50"
+            className="column-2 image"
+          >
             <motion.div
               animate={{ x: [-100, 0] }}
               transition={{ ease: "easeOut", duration: 2 }}

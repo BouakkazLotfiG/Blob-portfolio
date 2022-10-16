@@ -1,12 +1,17 @@
-import React from 'react'
-import "./Services.css"
-import { images } from '../../constants'
+import { useEffect } from "react";
+import "./Services.css";
+import { images } from "../../constants";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Services = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1300 });
+  }, []);
   return (
     <section className="services section scroll-area" id="services">
       <div className="container">
-        <div className="section-header">
+        <div data-aos="fade-up" className="section-header">
           <h3 className="title gradient-text" data-title="What I Do">
             Services
           </h3>
@@ -15,7 +20,7 @@ const Services = () => {
 
         <div className="cards">
           <div className="card-wrap">
-            <div className="card">
+            <div data-aos="fade-up" data-aos-offset="150" className="card">
               <div className="card-content z-index">
                 <img src={images.codeicon} className="icon" alt="" />
                 <h3 className="title-sm">Front end Development</h3>
@@ -36,7 +41,7 @@ const Services = () => {
               className="points points2 points-sq"
               alt=""
             />
-            <div className="card">
+            <div data-aos="fade-up" data-aos-offset="250" className="card">
               <div className="card-content z-index">
                 <img src={images.designicon} className="icon" alt="" />
                 <h3 className="title-sm">Full stack Development</h3>
@@ -54,6 +59,6 @@ const Services = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Services
+export default Services;

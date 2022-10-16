@@ -8,6 +8,8 @@ import { images } from "../../constants";
 import { AiFillEye, AiFillCode } from "react-icons/ai";
 import Popup from "../../constants/Popup";
 import CardPopup from "./CardPopup";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Dev = () => {
   const [works, setWorks] = useState([]);
@@ -19,6 +21,10 @@ const Dev = () => {
 
   useEffect(() => {
     setFilterWork(projects.projects);
+  }, []);
+
+  useEffect(() => {
+    Aos.init({ duration: 1300 });
   }, []);
 
   useEffect(() => {
@@ -76,13 +82,17 @@ const Dev = () => {
       </div>
 
       <div className="container">
-        <div className="section-header">
+        <div data-aos="fade-up" className="section-header">
           <h3 className="title" data-title="My works">
             Portfolio
           </h3>
         </div>
 
-        <div className="app__work-filter">
+        <div
+          data-aos="fade-up"
+          data-aos-offset="50"
+          className="app__work-filter"
+        >
           {["All", "React", "Angular"].map((item, index) => (
             <div
               key={index}
@@ -102,7 +112,12 @@ const Dev = () => {
           className="app__work-portfolio"
         >
           {filterWork.map((work, index) => (
-            <div className="app__work-item app__flex" key={index}>
+            <div
+              data-aos="fade-up"
+              data-aos-offset="100"
+              className="app__work-item app__flex"
+              key={index}
+            >
               <div className="app__work-img app__flex">
                 <img src={work.logo} alt={work.name} />
 

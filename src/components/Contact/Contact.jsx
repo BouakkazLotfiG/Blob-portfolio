@@ -1,9 +1,11 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
 import { FaLocationArrow } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { AiFillPhone } from "react-icons/ai";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
   const formRef = useRef();
@@ -12,6 +14,9 @@ const Contact = () => {
   function refreshPage() {
     window.location.reload(false);
   }
+  useEffect(() => {
+    Aos.init({ duration: 1300 });
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -35,7 +40,7 @@ const Contact = () => {
   return (
     <section className="contact section" id="contact">
       <div className="container">
-        <div className="contact-box">
+        <div data-aos="fade-up" className="contact-box">
           <div className="contact-info">
             <h3 className="title">Get in touch</h3>
             <p className="text">
